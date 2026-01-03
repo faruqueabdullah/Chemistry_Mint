@@ -18,9 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper Js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="swiper.css" /> -->
   </head>
 
   <body>
+    <!-- WhatsApp icon -->
     <a
       class="w-14 fixed bottom-6 right-6 z-50 bg-white rounded-lg"
       href="https://wa.me/918468962451"
@@ -43,10 +50,15 @@
 
           <!-- Desktop Links -->
           <div class="flex gap-10 items-center">
-            <ul class="hidden md:flex gap-8 font-medium text-gray-700">
+            <ul class="hidden md:flex gap-4 lg:gap-8 font-medium text-gray-700">
               <li><a href="#home" class="hover:text-green-600">Home</a></li>
               <li><a href="#about" class="hover:text-green-600">About</a></li>
-              <li><a href="#courses" class="hover:text-green-600">Courses</a></li>
+              <li>
+                <a href="#results" class="hover:text-green-600">Results</a>
+              </li>
+              <li>
+                <a href="#courses" class="hover:text-green-600">Courses</a>
+              </li>
             </ul>
 
             <!-- Desktop CTA -->
@@ -84,6 +96,7 @@
           >
             <li><a href="#home" class="hover:text-green-600">Home</a></li>
             <li><a href="#about" class="hover:text-green-600">About</a></li>
+            <li><a href="#results" class="hover:text-green-600">Results</a></li>
             <li><a href="#courses" class="hover:text-green-600">Courses</a></li>
 
             <li>
@@ -191,16 +204,17 @@
               class="relative rounded-2xl w-full max-w-120 h-125 overflow-hidden shadow-sm"
             >
               <img
-                src="../src/images/teacher.jpg"
+                src="../src/images/aboutImage.webp"
                 alt="teacher_image"
                 class="w-full h-full object-cover"
                 loading="lazy"
               />
               <p
-                class="absolute bottom-0 right-0 max-w-72 bg-white rounded-tl-2xl font-semibold text-2xl p-3 leading-6"
+                class="absolute bottom-0 right-0 max-w-72 bg-white rounded-tl-2xl font-semibold text-2xl p-3 leading-8"
               >
-                Roshan Sir <br /><span class="text-sm inline-block"
-                  >(B.tech, Awarded with honours)</span
+                Er. Roshan Sir <br /><span class="text-sm inline-block"
+                  >B.tech (Awarded with Hon's) <br />M.Sc. (Chemistry)
+                  B.Ed.</span
                 >
               </p>
             </div>
@@ -339,9 +353,15 @@
               <div class="w-full h-fit rounded-xl bg-green-200 p-5 mt-10">
                 <div class="flex justify-between items-center">
                   <p class="font-caveat text-5xl font-bold">01</p>
-                  <img src="" alt="student_image" />
+                  <img
+                    src="../src/images/mdhamdan01.jpg"
+                    alt="student_image"
+                    class="w-20 h-20 overflow-hidden rounded-full"
+                  />
                 </div>
-                <h4 class="py-3 font-bold text-xl">Name of the student</h4>
+                <h4 class="py-3 font-bold text-xl">
+                  Md. Hamdan (MBBS, IGMS Patna)
+                </h4>
                 <p class="font-caveat text-2xl leading-7">
                   “Sir explains concepts very clearly and from the basics. My
                   understanding of chemistry has improved a lot after joining.”
@@ -352,7 +372,7 @@
             <!-- review card 02 -->
             <div
               id="reviews"
-              class="relative mx-auto mt-10 sm:absolute sm:-rotate-6 sm:top-28 sm:right-10 max-w-75 w-full h-95 rounded-xl shadow-lg bg-white z-20 p-3"
+              class="relative mx-auto mt-10 sm:absolute sm:-rotate-6 sm:top-28 sm:right-10 max-w-75 w-full min-h-95 rounded-xl shadow-lg bg-white z-20 p-3"
             >
               <div class="text-center">
                 <i
@@ -362,9 +382,15 @@
               <div class="w-full h-fit rounded-xl bg-pink-200 p-5 mt-10">
                 <div class="flex justify-between items-center">
                   <p class="font-caveat text-5xl font-bold">02</p>
-                  <img src="" alt="student_image" />
+                  <img
+                    src="../src/images/mdfaizan.jpg"
+                    alt="student_image"
+                    class="w-20 h-20 overflow-hidden rounded-full"
+                  />
                 </div>
-                <h4 class="py-3 font-bold text-xl">Name of the student</h4>
+                <h4 class="py-3 font-bold text-xl">
+                  Md. Faizan (IIIT Jabalpur)
+                </h4>
                 <p class="font-caveat text-2xl leading-7">
                   “Notes are simple and easy to revise. Teaching is calm and
                   supportive, especially before exams.”
@@ -385,9 +411,13 @@
               <div class="w-full h-full rounded-xl bg-blue-200 p-5 mt-10">
                 <div class="flex justify-between items-center">
                   <p class="font-caveat text-5xl font-bold">03</p>
-                  <img src="" alt="student_image" />
+                  <img
+                    src="../src/images/sidhart01.jpg"
+                    alt="student_image"
+                    class="w-20 h-20 overflow-hidden rounded-full"
+                  />
                 </div>
-                <h4 class="py-3 font-bold text-xl">Name of the student</h4>
+                <h4 class="py-3 font-bold text-xl">Siddhart (IIIT Patna)</h4>
                 <p class="font-caveat text-2xl leading-7">
                   “Personal attention and regular doubt sessions helped me a
                   lot. Organic chemistry finally makes sense now.”
@@ -408,15 +438,48 @@
               <div class="w-full h-full rounded-xl bg-yellow-200 p-5 mt-10">
                 <div class="flex justify-between items-center">
                   <p class="font-caveat text-5xl font-bold">04</p>
-                  <img src="" alt="student_image" />
+                  <img
+                    src="../src/images/ravikumar.jpg"
+                    alt="student_image"
+                    class="w-20 h-20 overflow-hidden rounded-full"
+                  />
                 </div>
-                <h4 class="py-3 font-bold text-xl">Name of the student</h4>
+                <h4 class="py-3 font-bold text-xl">
+                  Ravi Kumar (NIT-Durgapur)
+                </h4>
                 <p class="font-caveat text-2xl leading-7">
                   The best thing about this institute is personal attention. Sir
                   always clears doubts patiently, even after class.”
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <!-- results -->
+        <section id="results" class="mt-20 max-w-6xl mx-auto font-inter">
+          <h2 class="text-5xl font-bold leading-14 text-center py-10">
+            Results that speak
+          </h2>
+          <div class="swiper mySwiper w-full lg:h-140 border">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-center w-full h-full">
+                <img src="../src/images/results.webp" class="bg-cover w-full h-full"/>
+              </div>
+              <div class="swiper-slide bg-center w-full">
+                <img src="../src/images/result001.webp" class="bg-cover w-full h-full"/>
+              </div>
+              <div class="swiper-slide bg-center w-full">
+                <img src="../src/images/result002.webp" class="bg-cover w-full h-full"/>
+              </div>
+              <div class="swiper-slide bg-center w-full">
+                <img src="../src/images/result03.webp" class="bg-cover w-full h-full"/>
+              </div>
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
 
@@ -430,17 +493,20 @@
                 <ul class="w-full rounded-xl bg-green-200 p-5 mt-10">
                   <li
                     class="font-semibold text-2xl border-b-2 border-dashed pb-5"
-                  ><i class="fa-solid fa-graduation-cap"></i>
+                  >
+                    <i class="fa-solid fa-graduation-cap"></i>
                     11 and 12 (CBSE and BSEB)
                   </li>
                   <li
                     class="font-semibold text-2xl border-b-2 border-dashed py-5"
-                  ><i class="fa-solid fa-graduation-cap"></i>
+                  >
+                    <i class="fa-solid fa-graduation-cap"></i>
                     Neet
                   </li>
                   <li
                     class="font-semibold text-2xl border-b-2 border-dashed py-5"
-                  ><i class="fa-solid fa-graduation-cap"></i>
+                  >
+                    <i class="fa-solid fa-graduation-cap"></i>
                     Jee Mains/Advance
                   </li>
                 </ul>
@@ -590,6 +656,8 @@
         </div>
       </footer>
     </div>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>
