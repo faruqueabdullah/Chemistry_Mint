@@ -12,7 +12,6 @@ let isOpen = false;
 
 menuBtn.addEventListener('click', () => {
     isOpen = !isOpen;
-    console.log(isOpen)
     // menuIcon.src = closeIcon;
     mobileMenu.classList.toggle('bottom-10')
     mobileMenu.classList.toggle('-bottom-[270px]')
